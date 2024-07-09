@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto+Slab:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    background: none;
+    border: none;
+    font-size: 14px;
+
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: #000000;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8)50%,rgba(255, 255, 255, 0.8)50%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ff7200;
+    border-radius: 15px;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+body{
+    background: #ea8685;
+    overflow-y: scroll;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4)50%,rgba(0,0,0,0.4)50%),url(cat_cover.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    padding-top: 50px;
+    
+}
+
+.navbar{
+    width: 100%;
+    height: 75px;
+    background-color: #e38132;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid rgb(107, 105, 105);
+    border-end-end-radius:  40px;
+    border-end-start-radius:  40px;
+
+}
+
+.cat_cover {
+    width: 50vw;
+    margin-top: 10vw;
+    margin-left: 35vw;
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    color: #fff;
+    text-shadow: 3px 3px #ff0000;
+
+}
+.par{
+    width: 50vw;
+    margin-top: -1vw;
+    margin-left: 45vw;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-rendering: optimizeSpeed ;
+
+}
+.icon img{
+    width: 90px;
+    padding-top: 10px;
+    float: left;
+    height: 60px;
+    padding-left: 250px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    padding-left: 400px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #000000;
+}
+
+.Abyssinian img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.Abyssinian h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -100px;
+
+}
+.Abyssinian p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left: 200px;
+    margin-top: -50px;
+}
+.Abyssinian{
+    border-radius: 20px;
+    padding: 140px;
+    width: 1000px;
+    top: 620px;
+    left: 120px;
+    position: absolute;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+}
+
+.Bobtail img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 950px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.Bobtail p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+.Bobtail h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 40px;
+
+}
+.Bobtail{
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 950px;
+    left: 120px;
+    position: absolute; 
+    text-align: right;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+} 
+
+.Curl img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 30px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.Curl p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left:  340px;
+    margin-top: 90px;
+}
+.Curl h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 340px;
+    margin-top: 40px;
+
+}
+.Curl {
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 1280px;
+    left: 120px;
+    position: absolute; 
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+} 
+
+.Shorthair img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 950px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+.Shorthair p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+.Shorthair h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 40px;
+
+}
+.Shorthair{
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 1625px;
+    left: 120px;
+    position: absolute; 
+    text-align: right;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+} 
+
+.Wirehair img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 30px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.Wirehair p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left:  340px;
+    margin-top: 90px;
+}
+.Wirehair h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 340px;
+    margin-top: 40px;
+
+}
+.Wirehair {
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 1970px;
+    left: 120px;
+    position: absolute; 
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+} 
+
+.Balinese img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 950px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+.Balinese p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+.Balinese h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 40px;
+
+}
+.Balinese{
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 2315px;
+    left: 120px;
+    position: absolute; 
+    text-align: right;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+}     
+
+.Bengal img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 30px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.Bengal p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left:  340px;
+    margin-top: 90px;
+}
+.Bengal h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 340px;
+    margin-top: 40px;
+
+}
+
+.Bengal {
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 2655px;
+    left: 120px;
+    position: absolute; 
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+} 
+
+.Birman img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 950px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.Birman p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+.Birman h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 790px;
+    margin-top: 40px;
+
+}
+.Birman{
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 3000px;
+    left: 120px;
+    position: absolute; 
+    text-align: right;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+} 
+
+.Bombay img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 30px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+.Bombay p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left:  340px;
+    margin-top: 90px;
+}
+.Bombay h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 340px;
+    margin-top: 40px;
+
+}
+
+.Bombay {
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 3340px;
+    left: 120px;
+    position: absolute; 
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+} 
+
+.Burmese img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top:15px;
+    left: 950px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.Burmese p{
+    width: 70%;
+    font-size: 18px;
+    position: absolute;
+    color: #66676b;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+.Burmese h1{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 770px;
+    margin-top: 40px;
+
+}
+.Burmese{
+    border-radius: 20px;
+    width: 1280px;
+    height: 280px;
+    top: 3680px;
+    left: 120px;
+    position: absolute; 
+    text-align: right;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+}     
+   
+footer {
+    background-color: #e38132;
+    color: #fff;
+    padding: 20px;
+    height: 200px;
+    border-top: 4px solid rgb(107, 105, 105);
+    margin-top: 3500px;
+  }
+  
+  footer table {
+    width: 100%;
+  }
+  
+  footer td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer td h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    margin: -10px;
+    color: black;
+  }
+
+  .a{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%,rgba(255, 255, 255, 0.5)50%);
+
+}
