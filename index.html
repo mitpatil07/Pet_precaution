@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pet Precaution</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="uni-nav.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="icon" href="../logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Animals</button>
+                        <div class="dropdown-content">
+                            <a href="/dog-info/dog.html">Dog</a>
+                            <a href="/cat-info/cat.html">Cat</a>
+                            <a href="/cow-info/cow.html">Cow</a>
+                            <a href="/horse-info/horse.html">Horse</a>
+                        </div>
+                    </div>
+                    <li><button class="sign-btn">Sign In</button></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1>Pet <br><span>Precaution</span></h1>
+                <p class="par">Welcome to our comprehensive guide on "Pet Precautions," where we delve into everything
+                    you need to know to ensure the well-being of your beloved furry friends. Our dedicated page covers a
+                    spectrum of vital topics, offering valuable insights into pet information, diseases, treatments,
+                    medications, and care practices.<br><br><strong>The bond between owner and pet is like no
+                        other—they're our companions, always along for the ride no matter what ups and downs life
+                        brings.</strong></p>
+                <button class="register-btn">Enquiry</button>
+                <div class="photo">
+                    <h2>CATEGORY</h2>
+                    <a href="/dog-info/dog.html"><img src="/dog-info/puppy-1903313.jpg" alt="Dog"></a>
+                    <a href="/cat-info/cat.html"><img src="/cat-info/kitty-2948404.jpg" alt="Cat"></a>
+                    <a href="/cow-info/cow.html"><img src="/cow-info/cow.jpg" alt="Cow"></a>
+                    <a href="/horse-info/horse.html"><img src="/horse-info/horse.jpg" alt="Horse"></a>
+                </div>
+            </div>
+        </div>
+        <div id="loading-popup" class="loading-popup" style="display: none;">
+            <div class="loader"></div>
+        </div>
+        <div id="popup-form" class="popup-form">
+            <div class="form-content">
+                <span class="close">&times;</span>
+                <h2>Enquiry</h2>
+                <form action="db.php" method="post">
+                    <div class="form-group">
+                        <input id="name" type="text" placeholder="Pet Owner Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="pet_breed" type="text" placeholder="Pet Breed" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="what_we_do" placeholder="What We Do For You" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input id="suggestion" type="text" placeholder="Any Suggestion" required>
+                    </div>
+                    <input type="submit" class="submit-btn" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <table>
+            <tr>
+                <td><a href="#">
+                        <h3>ABOUT</h3>
+                    </a></td>
+                <td><a href="#">
+                        <h3>FEATURES</h3>
+                    </a></td>
+            </tr>
+            <tr>
+                <td><a href="#">
+                        <h4>Contact Us</h4>
+                    </a></td>
+                <td><a href="#">
+                        <h4>Disease</h4>
+                    </a></td>
+            </tr>
+            <tr>
+                <td><a href="#">
+                        <h4>Suggestion</h4>
+                    </a></td>
+                <td><a href="#">
+                        <h4>Treatment</h4>
+                    </a></td>
+            </tr>
+            <tr>
+                <td><a href="#">
+                        <h4>Privacy Policy</h4>
+                    </a></td>
+                <td><a href="#">
+                        <h4>First Aid Treatment</h4>
+                    </a></td>
+            </tr>
+            <tr>
+                <td><a href="#">
+                        <h4>Terms of Service</h4>
+                    </a></td>
+                <td><a href="#">
+                        <h4>How To Care</h4>
+                    </a></td>
+            </tr>
+        </table>
+    </footer>
+    </section>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const registerBtn = document.querySelector('.register-btn');
+        const popupForm = document.getElementById('popup-form');
+        const closeBtn = document.querySelector('.close');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        registerBtn.addEventListener('click', () => {
+            popupForm.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popupForm.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == popupForm) {
+                popupForm.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        // Get all links that trigger page transition
+        const pageLinks = document.querySelectorAll('a[href^="/"]');
+        const loadingPopup = document.getElementById('loading-popup');
+
+        // Add event listener to each link
+        pageLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent the default link behavior
+
+                // Show the loading animation popup
+                loadingPopup.style.display = 'flex';
+
+                // Navigate to the target page after a short delay
+                setTimeout(() => {
+                    window.location.href = link.href;
+                }, 1000); // Adjust the delay as needed (in milliseconds)
+            });
+        });
+    </script>
+
+</body>
+
+</html>
